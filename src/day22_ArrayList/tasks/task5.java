@@ -4,20 +4,23 @@ import java.util.Arrays;
 
 public class task5 {
     public static void main(String[] args) {
-        String  str = "Wooden Spoon!";
+        String str = "Wooden Spoon!1";
+        String letter = "", digit = "", specialChar = "";
 
-        char[] ch = str.toCharArray();
+        for (char each : str.toCharArray()) {
 
-        System.out.println(Arrays.toString(ch));
+            if (Character.isDigit(each)) {
+                digit += each + "";
 
-        int j = 0;
-
-        for (char i = ch[0]; i < ch.length; i++) {
-            System.out.println(Character.isDigit(ch[j]));
-            j++;
-
-
+            }else if(Character.isLetter(each)){
+                letter += each + "";
+            }else{
+                specialChar += each + "";
+            }
         }
+        System.out.println("letter = " + letter);
+        System.out.println("digit= " + digit);
+        System.out.println("SpecialChar= " + specialChar);
 
     }
 
