@@ -19,6 +19,7 @@ public class ConstructorCalls2 {
     }
 
     public static void main(String[] args) {
+
         ConstructorCalls2 obj1 = new ConstructorCalls2();
 
         System.out.println("----------------------------------------");

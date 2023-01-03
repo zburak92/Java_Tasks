@@ -72,33 +72,40 @@ public class day16 {
         Ea Eb Ec Ed Ee Ef Eg Eh Ei Ej Ek El Em En Eo Ep Eq Er Es Et Eu Ev Ew Ex Ey Ez
          */
 
-//        String reEnter;
-//
-//        do{
-//            System.out.println("Enter the radius of the circle:");
-//            int radius = scan.nextInt();
-//            scan.nextLine();
-//
-//            if(radius < 1){
-//                System.err.println("Invalid Entry for the radius of the circle");
-//                System.exit(1);
-//            }
-//
-//            System.out.println("Diameter of circle: " + radius * 2);
-//            System.out.println("Area of the circle: " + radius * radius * 3.14);
-//            System.out.println("Perimeter of the circle: " + 2 * 3.14 * radius);
-//
-//            System.out.println("Would you like to calculate another circle?");
-//            reEnter = scan.nextLine();
-//
-//                while(!(reEnter.equalsIgnoreCase("yes") || reEnter.equalsIgnoreCase("no"))){
-//                    System.err.println("Invalid entry. Please say yes/no: ");
-//                    reEnter = scan.nextLine();
-//            }
-//                if(reEnter.equalsIgnoreCase("no"))
-//                    System.out.println("Thank you for using Cydeo Circle Calculator APP");
-//
-//        }while(reEnter.equalsIgnoreCase("yes"));
+        String reEnter;
+
+        do{
+            System.out.println("Enter the radius of the circle:");
+            int radius = scan.nextInt();
+            //                           (enter)
+
+           scan.nextLine();
+
+            if(radius < 1){
+                System.err.println("Invalid Entry for the radius of the circle");
+                System.exit(1);
+            }
+
+            System.out.println("Diameter of circle: " + radius * 2);
+            System.out.println("Area of the circle: " + radius * radius * 3.14);
+            System.out.println("Perimeter of the circle: " + 2 * 3.14 * radius);
+
+            System.out.println("Would you like to calculate another circle?");
+            reEnter = scan.nextLine();
+
+                while(!(reEnter.equalsIgnoreCase("yes") || reEnter.equalsIgnoreCase("no"))){
+                    System.err.println("Invalid entry. Please say yes/no: ");
+                    reEnter = scan.nextLine();
+            }
+                if(reEnter.equalsIgnoreCase("no"))
+                    System.out.println("Thank you for using Cydeo Circle Calculator APP");
+
+        }while(reEnter.equalsIgnoreCase("yes"));
+
+        for (int i = 0, j = 0; i < 0 && j < 0; i++, j++) {
+
+
+        }
 
         /*
 

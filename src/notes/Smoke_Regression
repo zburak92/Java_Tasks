@@ -1,0 +1,66 @@
+
+Static testing (verification process) - Business team - Checking/testing the document: review, walkthrough, inspection
+
+Dynamic Testing (Validation process) -
+	- Regression Testing - Test all test cases for the project before the release to check all the functions are working.
+							 Performed before each release: both manually and automatically
+						 - How many test case scenarios and how long does it take to run them? -- end of each week: 450 TCs, 5 hour (and/or) end of each 	 month: 620 TCs 7 hours (interview answer should be "300 to 2000 TCs that take between 1 - 5 hours")
+						 - Do you Parallel test (use VMs)? (optional) -- if yes, 2 - 10 VMs
+
+	- Smoke Testing - 100% automated testing that is performed daily to ensure that major functionalities of the application are working as expected
+					- Who selects tests cases for the Smoke Test? -- QA Team
+					- How often do you update/add new Test cases to the Smoke Test? -- Depends, Mostly every 3 - 4 months
+					- How do you run the Smoke Test?
+						- Decide the test case: Major functionality Test Cases, Positive Test Cases, from both front and back end
+						- Inform the DevOps team: DevOps will schedule the Smoke Test on Jenkins app
+						- Receive Smoke test report form Jenkins and analyze: if any TC has failed, test manually to confirm, inform dev in daily standup
+
+	- How do you run your Smoke Test?
+		- We perform Smoke testing to check if the application is up and running by checking the major functions in QA env.
+		- Our Smoke test runs every morning at 6am
+		- There are around 43 TCs and takes about 25 minutes to run
+		- I check my Smoke test report from Jenkins every morning
+
+	- Cross-browser testing - Test one functions test case with multiple browsers that the business team asked, both manually and automatically
+
+	- ad-hoc/random testing - testers randomly test the application without following an requirement or test case
+							- tested manually
+							- find bugs by checking randomly
+
+	- When should we stop testing?
+		- When you're done with the user story
+		- Budget comes to an end
+		- testers cannot find more bugs
+
+	- Parking lot item/issue bin - list of off-topic items not relevant to the current agenda
+
+	- Rat-hole - discussion that is taking too long and not ending.. say rat-hole to stop and move on
+
+	- What challenges have you had at work? (Always end the subject with a positive comment)
+		- Lack of knowledge (short "Knowledge transfer" which was not enough) or short onboard time --- connect it to something positive
+		or
+		- Changing the requirement
+		- Acceptence criteria was not detailed enough
+		- Estimating point for a complex user story/task (i was not familiar with a specific user story)
+
+	- What is your day to day activity?
+		- Check email for smoke test results
+		- prepare for daily stand-up
+		- attend stand-up meeting
+
+		Early sprint
+		- Join Grooming meeting
+		- Join Sprint planning meeting
+		- Start creating Test cases
+
+		Mid Sprint
+		- Test Execution for both front and back end
+		- Code Review
+		- Bug report Creation
+		- Re-Testing
+
+		Later Sprint
+		- Demo/Review meeting
+		- Retro meeting
+		- Brown bag meeting (have lunch while learning from someone.. i.e developer teaching QA team how to code, QA teaching developer how to test etc.)
+		- Happy hour

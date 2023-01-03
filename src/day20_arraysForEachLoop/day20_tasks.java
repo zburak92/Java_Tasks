@@ -1,7 +1,50 @@
 package day20_arraysForEachLoop;
 
+import java.util.Arrays;
+import java.util.Scanner;
+
 public class day20_tasks {
     public static void main(String[] args) {
+
+        //DO NOT TOUCH BELOW
+        Scanner scan = new Scanner(System.in);
+        String str = scan.nextLine();
+
+        //WRITE YOUR CODE BELOW
+
+        String[] arr = str.split(", ");
+
+        int smallest=arr[0].length();//5
+
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i].length()<smallest){
+                smallest=arr[i].length();
+            }
+        }
+
+        int i=0;
+        for (String each : arr) {
+            if (each.length()==smallest){
+                i++;
+            }
+        }
+
+        String[] newArr=new String[i];
+
+        int j=0;
+        for (String each : arr) {
+            if (each.length()==smallest){
+                newArr[j++]=each;
+            }
+        }
+
+        System.out.println(Arrays.toString(newArr));
+
+    }
+
+
+
+
 
 
         /*
@@ -43,5 +86,5 @@ public class day20_tasks {
         MUST use for each loops
 
                 */
-    }
+
 }
